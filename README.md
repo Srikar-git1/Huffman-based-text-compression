@@ -4,7 +4,7 @@ This project implements and compares static Huffman compression at two different
 - **Character-level Huffman encoding**
 - **Word-level Huffman encoding** 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 word-huffman-compression/
@@ -27,9 +27,9 @@ word-huffman-compression/
 └── input.txt                     # Example input file
 ```
 
-## 🚀 Build & Run
+## Build & Run
 
-### 🔧 Build All
+### Build All
 
 ```bash
 g++ -Iinclude main.cpp src/*.cpp -o compare
@@ -37,7 +37,7 @@ g++ -Iinclude main_encode.cpp src/*.cpp -o encode
 g++ -Iinclude main_decode.cpp src/*.cpp -o decode
 ```
 
-### 📥 Input File
+### Input File
 
 Ensure you have an `input.txt` file in the root directory. Example:
 
@@ -45,48 +45,48 @@ Ensure you have an `input.txt` file in the root directory. Example:
 a friend in need is a friend indeed a friend in need is a friend indeed
 ```
 
-### 🧪 Compare Compression
+### Compare Compression
 
 ```bash
 ./compare
 ```
 
-### 📦 Compress and Save to Binary
+### Compress and Save to Binary
 
 ```bash
 ./encode  # creates compressed.bin
 ```
 
-### 🔁 Decompress
+### Decompress
 
 ```bash
 ./decode  # reads compressed.bin → recovered.txt
 ```
 
-## 📊 Output Example
+## Output Example
 
 ```
-🔵 Input Text (from input.txt):
+Input Text (from input.txt):
 a friend in need ...
 
-🟢 Word-Level Decoded:
+Word-Level Decoded:
 a friend in need ...
 
-🟢 Char-Level Decoded:
+Char-Level Decoded:
 a friend in need ...
 
-📊 Compression Ratios:
+Compression Ratios:
 Word-Level: 0.29
 Char-Level: 0.44
 ```
 
-## ✅ Features
+## Features
 
 - Huffman tree built on actual frequency
 - Dictionary embedded in compressed file
 - Padding tracked and removed
 - Encodes to and from binary file
 
-## 📄 License
+## License
 
 MIT License
